@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT5</title>
+</head>
+<body>
+<script>
+    let name = prompt("Nhap ten")
+    let name1 = ['polaris','aldebaran','deneb','vage','altair','dubhe','refulus'];
+    let name2 = ['ursa minos','tarugus','cygnus','lyra','aquaila','ursa major','leo'];
+    function a(str){
+        for (let i = 0; i < name1.length; i++){
+            if (name1[i] == str){
+                return i;
+            }
+        }
+        return false;
+    }
+    let index = a(name);
+    if (index == false){
+        alert('Undefined');
+    }else {
+        alert(name2[index]);
+    }
+
+
+</script>
+</body>
+</html>
